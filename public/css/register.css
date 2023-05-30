@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,200&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,700&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container{
+    background: #f5bd89;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.container form{
+    width: 35%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    align-items: center;
+    position: relative;
+}
+.container form div{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.container form div label{
+    font-weight: 700;
+}
+.container form div input,button{
+  height: 35px;
+  background: #f8f0f0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-indent: 12px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.container form div input:focus{
+border: 1px solid #f5bd89;
+}
+
+.container form div button{
+background: #333;
+border: none;
+color: #fff;
+}
+
+
+.file-input-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .inputfile {
+    display: none;
+  }
+
+  .file-input-label {
+    display: inline-block;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+  }
+
+  .file-input-icon {
+    margin-right: 5px;
+  }
+
+  .file-input-text {
+    color: #333;
+  }
+
+  .file-name {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+  }

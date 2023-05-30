@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,200&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,700&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fffbfb;
+}
+.container .menu{
+    width: 100%;
+    height: 15%;
+    background: #44b16d;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .menu div{
+    display: flex;
+    gap: 8px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .menu div ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+
+}
+.container .menu div ul li{
+display: flex;
+gap: 10px;
+}
+.container .menu div ul li a{
+   text-decoration: none;
+   font-size: 18px;
+   color: #fff;
+   width: 120px;
+   padding: 10px ;
+   text-align: center;
+   transition: 0.6s;
+   border-radius: 8px;
+}
+.container .menu div ul li a:hover{
+    background: #c8e05a;
+    transition: 0.6s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.container .menu .div3 form button{
+border: none;
+background: transparent;
+}
+.container .menu .div3 .img{
+ width: 55px;
+ height: 55px;
+ border-radius: 25px;
+}
+.container .menu .div3 form button:hover{
+    cursor: pointer;
+    }
+.container-box{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.container-box .container-tareas{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    background: rgb(255, 255, 238);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.container-box .add{
+padding: 20px;
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+.container-box .add p{
+font-weight: 600;
+}
+.container-box .add button{
+    width: 140px;
+    height: 35px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background: #c59938;
+    border-radius: 7px;
+
+}
+.container-box .add button:hover{
+   background: #ecc879;
+   cursor: pointer;
+
+}
+
+.container-box .container-tareas .box-tarea{
+ max-width: 300px;
+ height: 250px;
+ flex-grow: 1;
+ background: #fff;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ transition: 0.6s;
+ box-shadow: 6px 6px 8px #b4b1b1;
+
+}
+.container-box .container-tareas .box-tarea:hover{
+transition: 0.6s;
+cursor: pointer;
+transform: translateY(-7px);
+}
+
+.container-box .container-tareas .box-tarea .span1{
+    width: 100%;
+    height: 20%;
+    background: #383434;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+}
+.container-box .container-tareas .box-tarea .span2{
+    width: 100%;
+    height: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-x:auto;
+    word-wrap: break-word;
+
+
+}
+
+.container-box .container-tareas .box-tarea .span3{
+    width: 100%;
+    height: 20%;
+    background: #383434;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+
+    gap:12px;
+    align-items: center;
+}
+.container-box .container-tareas .box-tarea .span3 form button[type="submit"]{
+    width: 50px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    transition: 0.5s;
+   }
+
+   .container-box .container-tareas .box-tarea .span3 form button[type="submit"]:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.4);
+   }
+.modal-tarea{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #9b96968a;
+    z-index: 1;
+    transition: 0.6s;
+
+}
+.modal-tarea .modal{
+    width: 400px;
+    height: 580px;
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+}
+
+.modal-tarea .modal form{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.modal-tarea .modal form div{
+width: 100%;
+}
+
+.modal-tarea .modal form div textarea{
+    width: 100%;
+    outline: none;
+    height: 185px;
+    background: #f1e9e9;
+    border: none;
+}
+.modal-tarea .modal form div input,textarea,button{
+    width: 100%;
+    outline: none;
+    height: 35px;
+    background: #f1e9e9;
+    border: none;
+    text-indent: 15px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #337ab7;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-file-upload:hover {
+    background-color: #23527c;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+.modal-tarea .modal button[type="submit"]{
+  background: #387953;
+  color: #fff;
+  font-weight: 600;
+}
+.modal-tarea .modal .btn-close{
+    background: #a73e23;
+    color: #fff;
+    font-weight: 600;
+}
